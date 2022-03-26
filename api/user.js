@@ -4,7 +4,7 @@
 //   res.json({ name: 'John Doe' });
 // }
 
-export function getUserInfo (req, res) {
+export default function getUserInfo (req, res) {
   console.log('参数', req);
   const { sex } = req.query
   
