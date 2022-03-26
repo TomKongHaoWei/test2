@@ -22,11 +22,14 @@
 //   });
 // }
 
-export default function handler(req, res) {
+module.exports = (req, res) => {
+  const { name = 'World', sex } = req.query
+  const _sex = sex ? '男' : '女'
+
   res.statusCode = 200;
   res.setHeader('Content-Type', 'application/json');
   res.json({ 
-    name: 'John Doe',
-    req
+    code: req,
+    '性别': _sex
   });
 }
