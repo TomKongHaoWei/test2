@@ -1,7 +1,7 @@
 module.exports = (req, res) => {
   const { name = 'World', sex } = req.query
   const _sex = sex ? '男' : '女'
-  res.send(`Hello ${name}!, 性别 ${sex}`)
+  res.send(`Hello ${name}!, 性别 ${_sex}`)
 }
 
 // export function getUserInfo (req, res) {
