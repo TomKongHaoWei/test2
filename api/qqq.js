@@ -1,4 +1,4 @@
-export const getUserInfo = (req, res) => {
+export function getUserInfo (req, res) {
   console.log('参数', req);
   const { sex } = req.query
   
@@ -12,7 +12,7 @@ export const getUserInfo = (req, res) => {
   });
 }
 
-export const setUserInfo = (req, res) => {
+export function setUserInfo (req, res) {
   console.log('参数', req);
   
   res.statusCode = 200;
