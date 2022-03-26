@@ -23,11 +23,11 @@
 // }
 
 module.exports = (req, res) => {
+  res.statusCode = 200;
   const { name = 'World', sex } = req.query
   const _sex = sex ? '男' : '女'
 
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'application/json');
+  // res.setHeader('Content-Type', 'application/json');
   res.json({ 
     code: req,
     '性别': _sex
