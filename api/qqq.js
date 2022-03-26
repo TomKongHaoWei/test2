@@ -29,7 +29,7 @@ module.exports = (req, res) => {
 
   // res.setHeader('Content-Type', 'application/json');
   res.json({ 
-    code: req,
-    '性别': _sex
+    name: name,
+    sex: _sex
   });
 }
